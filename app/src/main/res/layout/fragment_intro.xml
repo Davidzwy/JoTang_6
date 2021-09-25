@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:textSize="24sp"
+        android:background="@color/cardview_dark_background"
+        android:gravity="center_vertical"
+        android:text="自我介绍" />
+    <Button
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    android:text="点此前往没有内容的博客"
+    android:id="@+id/btn_blog"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:paddingLeft="15dp"
+        android:text="姓名：周委仪"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:paddingLeft="15dp"
+        android:text="年级：大二"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:paddingLeft="15dp"
+        android:text="参加招新原因：\n大一东学西学，很多东西浅尝辄止.
+        \n现在想找到自己感兴趣的方向好好学习。"/>
+    <ImageView
+        android:padding="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/img"/>
+
+
+
+</LinearLayout>

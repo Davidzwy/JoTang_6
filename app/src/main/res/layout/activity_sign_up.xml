@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context=".SignUpActivity">
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="center"
+        android:id="@+id/myicon"
+        android:src="@mipmap/user"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="35sp"
+        android:text="Create Account"
+        android:paddingBottom="15dp"
+        android:textColor="#8B56EA"/>
+   <RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:paddingLeft="70dp"
+       android:orientation="vertical"
+       android:paddingRight="70dp">
+       <TextView
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:text="username"
+           android:textColor="#dd9C27B0"
+           android:id="@+id/tvname"/>
+       <EditText
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:textAllCaps="false"
+           android:hint="请输入用户名"
+           android:id="@+id/username"
+           android:paddingLeft="10dp"
+           android:layout_below="@id/tvname"
+           android:textSize="20sp"
+           android:layout_marginBottom="10dp"
+           android:background="@drawable/round_rect_stroke"/>
+       <TextView
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_below="@id/username"
+           android:text="first password"
+           android:textColor="#dd9C27B0"
+           android:id="@+id/tvpwd1"/>
+
+       <EditText
+           android:id="@+id/password1"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_below="@id/tvpwd1"
+           android:layout_marginBottom="10dp"
+           android:password="true"
+           android:background="@drawable/round_rect_stroke"
+           android:hint="请输入密码"
+           android:paddingLeft="10dp"
+           android:textAllCaps="false"
+           android:textSize="20sp" />
+       <TextView
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_below="@id/password1"
+           android:text="second password"
+           android:textColor="#dd9C27B0"
+           android:id="@+id/tvpwd2"/>
+
+       <EditText
+           android:id="@+id/password2"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_below="@id/tvpwd2"
+           android:layout_marginBottom="10dp"
+           android:background="@drawable/round_rect_stroke"
+           android:hint="请再次输入密码"
+           android:password="true"
+           android:paddingLeft="10dp"
+           android:textAllCaps="false"
+           android:textSize="20sp" />
+       <TextView
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_below="@id/password2"
+           android:text="telephone number  *"
+           android:textColor="#dd9C27B0"
+           android:id="@+id/tvtelel"/>
+
+       <EditText
+           android:id="@+id/edtele"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_below="@id/tvtelel"
+           android:layout_marginBottom="10dp"
+           android:background="@drawable/round_rect_stroke"
+           android:hint="手机号码（选填）"
+           android:paddingLeft="10dp"
+           android:phoneNumber="true"
+           android:textAllCaps="false"
+           android:textSize="20sp" />
+   </RelativeLayout>
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/click_change"
+        android:text="注  册"
+        android:textSize="16sp"
+        android:id="@+id/send"
+        android:layout_marginTop="20dp"
+        android:textColor="#dddddd"
+        android:gravity="center"/>
+
+
+</LinearLayout>
